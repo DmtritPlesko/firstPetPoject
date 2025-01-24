@@ -40,7 +40,8 @@ public class User {
     @Column(name = "city")
     String city;
 
-    @JoinTable(name = "Books")
-    List<Book> books = new ArrayList<>();
+//    @OneToMany(mappedBy = "Books", cascade = CascadeType.ALL)
+//    List<Book> books;
+
 
 }
